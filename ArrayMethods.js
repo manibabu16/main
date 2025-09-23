@@ -1,6 +1,5 @@
 // javascript Array methods
 
-
         // Push()
 // let array = ['a','b','c']
 // array.push('d')
@@ -36,11 +35,17 @@
 // let squares = numbers.map((x)=>x*x);
 // console.log(squares);
 
+        // filter()
+// let numbers=[1,2,3,4,5,6];
+// let evennumbers=numbers.filter(x => x % 3 == 0);
+// console.log(evennumbers);
+
 
         //Array Methods/property
 
 // var country=['india', 'china']
 // console.log(country.toString())
+
 
 
 
