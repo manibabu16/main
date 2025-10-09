@@ -6,15 +6,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid bg">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
     <a class="navbar-brand me-auto" href="#">LOGO</a>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <a class="navbar-brand me-auto" href="#">LOGO</a>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -47,15 +48,21 @@
   <main class="text-center">
     <h4 class="mt-5 pt-5">Registration Form</h1>
   </main>
-  <section class="container my-5 bg-light w-50 text-dark p2">
-    <form class="row g-3">
+  <section class="container-fluid my-5 bg-light mx-auto p2 col-10 col-md-8 col-lg-4 rounded-3 shadow">
+     <form class="needs-validation" novalidate onsubmit="showSuccess(event)">
+  <div class="mb-3">
+      <label for="name" class="form-label"> Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+      <div class="invalid-feedback">Please enter your full name.</div>
+      <div class="valid-feedback">Good Job!</div>
+    </div>
   <div class="col-md-6">
-    <label for="inputtext4" class="form-label" >First Name</label>
-    <input type="text" class="form-control" id="inputtext4" placeholder="First Name">
+    <label for="validationCustomUsername" class="form-label">Lasst Name</label>
+    <div class="input-group has-validation">
+    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Last Name" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
   </div>
-  <div class="col-md-6">
-    <label for="inputtext5" class="form-label">Lasst Name</label>
-    <input type="text" class="form-control" id="inputtext5" placeholder="Last Name">
   </div>
   <div class="col-md-6">
     <label for="inputemail4" class="form-label">Email</label>
@@ -105,5 +112,36 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showSuccess(event) {
+    event.preventDefault();
+    const form = event.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const loadingBtn = document.getElementById('loadingBtn');
+
+    form.classList.add('was-validated');
+
+    if (form.checkValidity()) {
+      submitBtn.style.display = 'none';
+      loadingBtn.style.display = 'inline-block';
+
+      setTimeout(() => {
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+
+        form.reset();
+        form.classList.remove('was-validated');
+        loadingBtn.style.display = 'none';
+        submitBtn.style.display = 'inline-block';
+      }, 1500);
+    }
+  }
+</script>
+
+<script>
+  function redirectToPage() {
+    window.location.href = "index4.html";
+  }
+</script>
 </body>
 </html>
