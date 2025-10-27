@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap & FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .timeline {
+        list-style: none;
+        padding: 0;
+        position: relative;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        width: 2px;
+        background: #dee2e6;
+        top: 0;
+        bottom: 0;
+      }
+
+      .timeline li {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 60px;
+      }
+
+      .timeline li:before {
+        content: "";
+        position: absolute;
+        left: 22px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #28a745;
+        top: 0;
+      }
+
+      .rounded-circle {
+        border: 3px solid #dee2e6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="row">
+        <!-- LEFT PANEL -->
+        <div class="col-md-4">
+          <div class="card text-center mb-4">
+            <img
+              src="https://bootdey.com/img/Content/avatar/avatar7.png"
+              class="rounded-circle mx-auto mt-4"
+              width="120"
+              alt="Avatar"
+            />
+            <div class="card-body">
+              <h4>John Doe</h4>
+              <p class="text-muted">@johndoe</p>
+              <button class="btn btn-success btn-sm m-1">Follow</button>
+              <button class="btn btn-danger btn-sm m-1">Message</button>
+            </div>
+            <hr />
+            <div class="p-3 text-left">
+              <h6>About Me</h6>
+              <p>
+                Full Stack Developer with passion for building responsive web
+                apps.
+              </p>
+              <p><strong>Mobile:</strong> +91 1234567890</p>
+              <p><strong>Email:</strong> john@example.com</p>
+              <p><strong>Location:</strong> India</p>
+              <div class="mt-2">
+                <a href="#" class="text-primary mx-1"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-danger mx-1"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a href="#" class="text-info mx-1"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-dark mx-1"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5>Skills</h5>
+              <p>HTML5 <span class="float-right">60%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" style="width: 60%"></div>
+              </div>
+              <p>CSS <span class="float-right">80%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-info" style="width: 80%"></div>
+              </div>
+              <p>PHP <span class="float-right">90%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-warning" style="width: 90%"></div>
+              </div>
+              <p>Laravel <span class="float-right">40%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-danger" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="col-md-8">
+          <!-- Tabs -->
+          <ul class="nav nav-pills mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#about"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#settings"
+                >Settings</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- About Tab -->
+            <div class="tab-pane fade show active" id="about">
+              <h5 class="mb-3">Experience</h5>
+              <ul class="timeline">
+                <li>
+                  <h6>Web Developer at ABC Corp</h6>
+                  <p>2022 - Present</p>
+                  <p>Developed responsive websites and dashboards.</p>
+                </li>
+                <li>
+                  <h6>Intern at XYZ Pvt Ltd</h6>
+                  <p>2021 - 2022</p>
+                  <p>Worked on PHP and MySQL based backend systems.</p>
+                </li>
+              </ul>
+
+              <h5 class="mt-4">Projects</h5>
+              <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th>#</th>
+                    <th>Project</th>
+                    <th>Technologies</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Student Management</td>
+                    <td>PHP, MySQL, Bootstrap</td>
+                    <td><span class="badge badge-success">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Hotel Booking API</td>
+                    <td>CodeIgniter 4, MySQL</td>
+                    <td><span class="badge badge-warning">Ongoing</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Settings Tab -->
+            <div class="tab-pane fade" id="settings">
+              <form>
+                <div class="form-group">
+                  <label>Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Mobile</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="+91 1234567890"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    value="john@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    value="password123"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Company</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="ABC Corp"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Facebook</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="facebook.com/username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Twitter</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="twitter.com/username"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success">
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" />
+
+</head>
+
+<body class="custom-profile">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-sticky top-0 custom-navbar bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#"><img src="mni.png" class="navimg" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list fs-2"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:5500/index.html#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/index.html#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/Projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/index.html#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+      </div>
+
+      <div class="ms-3">
+        <a href="#" class="btn  d-inline-flex align-items-center custom-login">
+          <i class="bi bi-award me-2"></i> Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+<div class="container py-4 ">
+      <div class="row">
+        <!-- LEFT PANEL -->
+        <div class="col-md-4">
+          <div class="card text-left mb-4">
+            <img
+              src="manii.jpg"
+              class="rounded-circle mx-auto mt-4"
+              width="120"
+              alt="mani"
+            />
+            <div class="card-body text-center">
+              <h4>Mani</h4>
+              <p class="text-muted">@Web Designer</p>
+              <button class="btn btn-outline-dark btn-sm m-1">Follow</button>
+              <button class="btn btn-outline-dark btn-sm m-1">Message</button>
+            </div>
+            <hr>
+            <div class="p-3 text-left" !important>
+              <h6>About Me</h6>
+              <p>
+                Full Stack Developer with passion for building responsive web
+                apps.
+              </p>
+              <p><strong>Mobile:</strong> +91 9791224422</p>
+              <p><strong>Email:</strong> manibabu16@gmail.com</p>
+              <p><strong>Location:</strong> India</p>
+              <div class="mt-2 d-flex justify-content-center">
+                <a href="#" class="text-primary mx-1"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-danger mx-1"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a href="#" class="text-info mx-1"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-dark mx-1"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5>Skills</h5>
+              <p>HTML5 <span class="float-right">95%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" style="width: 95%"></div>
+              </div>
+              <p>CSS <span class="float-right">90%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-info" style="width: 90%"></div>
+              </div>
+              <p>JS <span class="float-right">50%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-warning" style="width: 50%"></div>
+              </div>
+              <p>Laravel <span class="float-right">40%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-danger" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="col-md-8 bg-white p-4" id="profile-section">
+          <!-- Tabs -->
+          <ul class="nav nav-pills mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#about"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#settings"
+                >Settings</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- About Tab -->
+            <div class="tab-pane fade show active bg-white" id="about">
+              <h5 class="align-items-center ">Experience</h5>
+              <ul class="timeline bg-white">
+                <li>
+                  <h6>Web Developer at Corp</h6>
+                  <p>2023 - Present</p>
+                  <p>Developed responsive websites and dashboards.</p>
+                </li>
+                <li>
+                  <h6>Upwork Pvt Ltd</h6>
+                  <p>20215 - 2023</p>
+                  <p>Worked on Web Designer based backend systems.</p>
+                </li>
+              </ul>
+
+              <h5 class="mt-4">Projects</h5>
+              <table class="table table-borderedless">
+
+                  <tr>
+                    <th>#</th>
+                    <th>Project</th>
+                    <th>Technologies</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Portfolio Website</td>
+                    <td>HTMl, CSS, Bootstrap</td>
+                    <td><span class="badge bg-success">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Hotel Booking API</td>
+                    <td>CodeIgniter 4, MySQL</td>
+                    <td><span class="badge bg-warning">Ongoing</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Settings Tab -->
+            <div class="tab-pane d-flex flex-column fade" id="settings">
+              <form class=" row g-2 mb-3 needs-validation" novalidate>
+
+                  <div class="col-md-6  text-start">
+                  <label for="validationServer01" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="validationServer01"  placeholder="Enter first name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="validationServer02" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="validationServer02" required>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-12 text-start">
+                  <label for="validationServer03" class="form-label">Bio</label>
+                  <textarea class="form-control" id="validationServer03" placeholder="Write something..."
+                    rows="3" required></textarea>
+                  <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="validationServer04" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="validationServer04" placeholder="Enter Email"
+                    aria-describedby="emailhelp" required>
+                  <div id="emailhelp" class="form-text">If you want to change email please <a href=""
+                      style="text-decoration: none;">click</a> here.</div>
+                       <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="validationServer05" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" aria-describedby="passwordhelp"
+                    placeholder="Enter Password" required>
+                  <div id="passwordhelp" class="form-text">If you want to change password please <a href=""
+                      style="text-decoration: none;">click</a> here.</div>
+                  <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="bg-light bg-light p-2 MS-0 text-start fs-5 text-secondary-color-rgb"
+                  style="color: gray; font-weight: 500;">
+                  <i class="fa-solid fa-building"></i>
+                  COMPANY INFO
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="inputtext1" class="form-label">Company Name</label>
+                  <input type="text" class="form-control" id="inputtext1" placeholder="Enter company name" required>
+                                    <div class="valid-feedback" >
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Website</label>
+                  <input type="text" class="form-control" id="inputtext2 " placeholder="Enter website url" required>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="bg-light p-2 MS-0 text-start fs-5 text-secondary-color-rgb"
+                  style="color: gray; font-weight: 500;">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  SOCIAL
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Facebook</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-square-facebook"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Url" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Twitter</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-twitter"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Instagram</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-instagram"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Url" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Linkedin</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Url</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-linkedin"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Url" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Skype</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-skype"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="@username" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                  <label for="inputtext2" class="form-label">Github</label>
+                  <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-brands fa-github"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" required>
+                  </div>
+                                    <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please enter first name.
+                </div>
+                </div>
+
+
+                <button type="submit" class="btn width-25 btn-success my-3">
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+      once: true
+    });
+  </script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+</body>
+
+</html>

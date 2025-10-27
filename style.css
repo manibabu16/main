@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.custom-navbar{
+  background-color: #eceeee !important; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky !important;
+    border: 1px solid #dcdcdc;
+    z-index: 5;
+}
+.custom-navbar .nav-link {
+  color: #1c1f25 !important;
+  font-weight: 500;
+    font-size: 15px;
+}
+.custom-navbar .nav-link:hover {
+  color: #9e76ec !important; /* yellow hover */
+}
+.navbar-nav{
+    gap: 2rem;
+    
+
+}
+
+#Home1{
+  background: #eceeee !important; 
+  height:40vh;
+  align-content: center;
+  font-size: xx-large;
+}
+
+#Home1 h1{
+  font-size: 7rem;
+  font-weight: 600;
+  color: #8775f9;
+}
+
+.carousel-control-prev-icon{
+  display: none;
+}
+
+.carousel-control-next-icon{
+  display: none;
+}
+
+.custom-login{
+  color: #1c1f25 !important;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.custom-login:hover{
+    color: white !important;
+    background-color: #000000;
+}
+
+.icon1 {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    background-color: #9e76ec;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-items: center;
+    display: inline-flex;
+}
+
+.icon1 i{
+    margin-right: 5px;
+    font-size: 1.5rem;
+    line-height: .5;
+}
+.icon1:hover {
+    background-color:  #8859e7;
+ 
+    outline: white;
+    text-decoration: none;
+}
+.custom-home{
+    min-height: 100vh;
+    background: #000000;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: auto;
+    padding: 100px 15px 60px;
+    z-index: 1;
+}
+
+.custom-left{
+    z-index: 2;
+}
+.custom-col1{
+    background: url(71031.jpg);
+}
+
+.custom-home-img{
+    overlay: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-home-img:hover {
+  transform: translateY(-8px);
+  
+}
+
+.custom-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.custom-row{
+  justify-content: space-evenly;
+}
+
+ .custom-p1{
+    font-size: 1.2rem;
+    color: #1a1818;
+    font-weight: 600;
+    line-height: 1.8;
+
+} 
+
+.custom-pricing{
+    min-height: 100vh;
+    background: #000000;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 100px 15px 60px;
+}
+
+
+ /* #innersection h1{
+    color: black;
+    position: absolute;
+    top: 64%;
+    left: 15%;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+#innersection h1:nth-child(1){
+    animation-delay: 0s;
+
+}
+#innersection h1:nth-child(2){
+    animation-delay: 3s;
+
+}
+#innersection h1:nth-child(3){
+    animation-delay: 6s;
+}  */
+
+.card-service {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-small{
+    width: 2Rem;
+    height: 2rem;
+}
+
+.icon-small2{
+    width: 1Rem;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#about{
+    
+    background: #8859e7;
+}
+
+
+.carousel-img {
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(60%);
+  object-position: bottom;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navimg{
+    width: 80px;
+    object-fit: cover;
+}
+
+.custom-white{
+    background: #000000;
+    min-height: 100vh;
+}
+
+/* .flip{
+    transform: rotate(180deg);
+} */
+
+ /* .blob-motion {
+        position: absolute;
+        transform: translateY(-20%);
+        z-index: 1;
+      } */
+
+ .blob-motion {
+        position: absolute;
+        margin-left: 25%;
+        margin-top:  -15%;
+        z-index: 0;
+      }
+
+      .blob-content {
+        z-index: 1;
+      }
+/* @keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+
+
+
+/* Profile Page CSS */
+
+
+.custom-profile{
+  background: #eceeee;
+}
+
+.timeline {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        background: #fff;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        width: 2px;
+        background: #dee2e6;
+        top: 0;
+        bottom: 0;
+      }
+
+      .timeline li {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 60px;
+      }
+
+      .timeline li:before {
+        content: "";
+        position: absolute;
+        left: 22px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #28a745;
+        top: 0;
+      }
+      #about{
+        background: #eceeee;
+      }
+
+      .rounded-circle {
+        border: 3px solid #dee2e6;
+      }
+
+      svg{
+        margin-left: -20px;
+        border: 2px solid #fff;
+        transition: traform 0.3s ease,z-index 0.2s ease;
+
+      }
+      svg:first-child{
+        margin-left: 0px;
+      }
+
+      .custom-bread{
+        margin-left: 20px;
+      }
+
+      .sea1 .search-placeholder{
+        text-align: center;
+      }
+
+      .progress-bar{
+        background: #66bf7b;
+      }
+      @media only screen and (max-width: 991px) {
+        .custom-btn{
+          position: absolute;
+          top: 10px;
+          right: 0px;
+          background: #eceeee;
+          
+          z-index: 1;
+          display: contents;
+        }
+          
+        .custom-toggler{
+          position: relative;
+          right: 30px;
+          z-index: 2;
+          outline: none;
+        }
+        
+      }
