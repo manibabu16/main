@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #050622;
+      color: #fff;
+      height: auto;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar.collapsed {
+      width: 70px;
+    }
+
+    .sidebar .nav-link {
+      color: #9b9aa5;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .sidebar .nav-link:hover {
+      color: #fff;
+    }
+
+    .sidebar .description {
+      white-space: nowrap;
+      font-size:smaller;
+      transition: opacity 0.3s;
+    }
+
+    .sidebar.collapsed .description {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .sub-menu a {
+      padding-left: 35px;
+    }
+
+    #toggle-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+
+    
+    /* Remove hover effect only for Dashboard link */
+.sidebar .d-flex .nav-link:hover {
+  background: none !important;
+}
+
+.main{
+    margin: 0;
+    padding: 15px;
+    background-color: #f2f3f7;
+
+}
+
+.card{
+    background-color: #f2f3f7;
+}
+.search-box input{
+    background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.search-box input:focus{
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+  outline: none;
+}
+
+.custom-button{
+    background-color: #f46e6d;
+}
+
+.side-muted{
+    color: #9b9aa5;
+}
+
